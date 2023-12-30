@@ -1,0 +1,424 @@
+/*-------------------------------  Start Variables ------------------------------- */
+:root {
+  --main-color: #E7E7E9;
+  --main-color-dark: #3A311E;
+  --main-color-light: #CA9853;
+
+}
+/*-------------------------------  End Variables ------------------------------- */
+/*----------------------------------- Start Customize Scrollbar ----------------------*/
+/* Width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Height */
+::-webkit-scrollbar {
+  height: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #eeeeee8c;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 100px;
+  box-shadow: inset 0 0 10px #eeeeeeaf;
+}
+/*----------------------------------- End Customize Scrollbar ----------------------*/
+/*----------------------------------- Start Selection ----------------------*/
+::selection {
+  background-color: var(--main-color-dark);
+  color: var(--main-color);
+}
+/*----------------------------------- End Selection ----------------------*/
+/*-------------------------------  Start Global Rules ------------------------------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 40px;
+}
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Blinker', sans-serif;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  color: inherit;
+}
+/*-------------------------------  End Global Rules ------------------------------- */
+.signUp {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.65)
+  ),
+  url(../images/Purple\ Space\ Quote\ Desktop\ Wallaper\ \(1\).png);
+background-position: 100% 100%;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.form {
+  width: 500px;
+  padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 24px 64px var(--main-color-dark);
+  color: #fff;
+  border-radius: 12px;
+}
+#userName,#pass,#email {
+  padding-left: 38px;
+  padding-right: 55px;
+}
+#userName::placeholder,
+#email::placeholder{
+   font-family: 'Blinker', sans-serif;
+   font-size: 15px;
+   color: rgba(0, 0, 0, 0.6);
+}
+#pass::placeholder{
+   font-family: 'Blinker', sans-serif;
+   font-size: 12px;
+   color: rgba(0, 0, 0, 0.6);
+   padding-left: 5px;
+}
+.signUp input:focus{
+  box-shadow: 0px 0px 15px 0px var(--main-color-dark);
+  border: solid 1px var(--main-color-dark);
+  border: 0% !important;
+}
+.signUp .icon{
+  top: 50%;
+  left: 3.6%;
+  color: rgba(0, 0, 0, 0.5);
+}
+.btn{
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+button:hover{
+  box-shadow: 0px 0px 10px 0px var(--main-color);
+}
+.toggle-password-btn{
+  top: 50%;
+  right: 7%;
+}
+.toggle-password-btn button{
+  border: 0;
+  background-color: #fff;
+  border-radius: 50%;
+}
+/* to hidden visiblility password in edge  */
+input::-ms-reveal {
+  display: none;
+}
+/*-------------------------------  Start TodoList ------------------------------- */
+/*-------------------------------  Start spinner ------------------------------- */
+.spinner-wrapper {
+  background-color: var(--white-color);
+  color: var(--title-color);
+  font-size: 2.2rem;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.5s;
+}
+.spinner-border {
+  height: 50px;
+  width: 50px;
+}
+/*-------------------------------  end spinner ------------------------------- */
+/*-------------------------------  Start Navbar ------------------------------- */
+.navbar{
+  font-family: 'Amatic SC', sans-serif;
+}
+nav .navbar-brand {
+  font-weight: 900 !important;
+  font-size: 2rem !important;
+  color: var(--main-color-dark);
+}
+nav ul {
+  font-size: 1.5rem;
+  font-weight: 900 !important;
+}
+nav button span  {
+  color: var(--main-color-dark) ;
+  font-size: 22px;
+}
+.nav-link,
+nav button span i {
+  color: var(--main-color-dark);
+}
+.inputs #btn,
+.Logoutbtn{
+  background-color:  var(--main-color-light);
+  border: var(--main-color-light) 1px solid;
+  color: var(--main-color-dark);
+  border-radius: 12px;
+  transition: all 2s;
+  padding: 2px 10px;
+}
+
+/* font-family: 'Amatic SC', sans-serif;
+font-family: 'Blinker', sans-serif; */
+
+/*-------------------------------  End Navbar  ------------------------------- */
+/*-------------------------------  Start Header  ------------------------------- */
+header {
+background-image: url(../images/Purple\ Space\ Quote\ Desktop\ Wallaper\ \(3\).png);
+height: 88vh;
+background-attachment: fixed;
+background-position: 100% 100%;
+background-size: cover;
+font-family: 'Amatic SC', sans-serif;
+line-height: 50px;
+}
+#home{
+  padding-top: 150px !important;
+}
+#home h1 {
+  font-size: 3.8rem;
+  color: var(--main-color-dark);
+}
+#home p {
+  font-weight: 300 !important;
+  font-size: 3.2rem;
+  color: var(--main-color-dark);
+}
+#typed {
+  font-size: 4.2rem;
+  color: var(--main-color-dark);
+}
+.typed-cursor {
+  font-size: 4.2rem;
+  color: var(--main-color-dark);
+}
+/*-------------------------------  End Header  ------------------------------- */
+/*-------------------------------  strat board ------------------------------- */
+.board{
+  height: 88vh;
+  color: var(--main-color-dark);
+  font-family: 'Blinker', sans-serif;
+}
+.inputs #btn{
+  padding: 5px 15px;
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: 900;
+}
+.inputs input:focus{
+  outline: none;
+  border: var(--main-color-dark) solid 1px;
+  box-shadow: 0px 0px 15px 0px var(--main-color);
+}
+.list h2{
+  font-size: 25px;
+  background-color: var(--main-color);
+  padding: 10px 0px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: 900;
+}
+.list .to-do{
+  border-top: #1565C0 solid 3px;
+}
+.list .Information{
+  border-top: #4CAF50 solid 3px;
+
+}
+.list .Progress{
+  border-top: #D32F2F solid 3px;
+
+}
+.list .Done{
+  border-top: #795548 solid 3px;
+}
+.list .item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #e7e7e9a9;
+  background-color: #e7e7e9a9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+  cursor: move;
+  color: var(--main-color-dark);
+}
+/*-------------------------------  End board ------------------------------- */
+/*-------------------------------  Start drow ------------------------------- */
+.drow{
+  overflow: hidden;
+  height: 89.3vh;
+}
+.drow .nav{
+  width: 50%;
+  height: 70px;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s;
+  background: linear-gradient(to right, #4568dcbd, #b16ab385);
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  cursor: pointer;
+  font-weight: bolder;
+  color: #3A311E;
+}
+.drow button{
+  background-color: var(--main-color);
+  border: 0;
+  outline: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+.drow .save{
+  background-color: #1565C0;
+  color: #fff;
+}
+.clr{
+  height: 35px;
+  width: 35px;
+  background-color: blue;
+  border-radius: 50px;
+  border: 3px solid #fff;
+  transition: transform 0.5s;
+}
+.clr:hover{
+  transform: scale(1.2);
+}
+.clr:nth-child(1){
+  background-color: #000;
+}
+.clr:nth-child(2){
+background-color: red;
+}
+.clr:nth-child(3){
+background-color: orange;
+}
+.clr:nth-child(4){
+background-color: blue;
+}
+.clr:nth-child(5){
+background-color: purple;
+}
+.clr:nth-child(6){
+background-color: yellowgreen;
+}
+.clr:nth-child(7){
+background-color: yellow;
+}
+.clr:nth-child(8){
+background-color: #fff;
+}
+input[type="color"]{
+  width: 60px;
+  height: 35px;
+}
+#ageOutputId{
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+}
+#ageInputId{
+  background: linear-gradient(to right , #000428 0%, #004e92 100%);
+  height: 7px;
+  outline: none;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  accent-color: #fff;
+}
+.emoji{
+  font-size: 20px;
+}
+/*-------------------------------  End drow ------------------------------- */
+/*-------------------------------  Start Media-Queries ------------------------------- */
+
+@media (max-width: 1200px) {
+  #home h1 {
+    font-size: 3rem;
+  }
+  #typed {
+    font-size: 3rem;
+  }
+  .typed-cursor {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #typed {
+    font-size: 2.5rem;
+  }
+  .typed-cursor {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .form {
+    max-width: 80%;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  #typed {
+    font-size: 2rem;
+  }
+  .typed-cursor {
+    font-size: 2rem;
+  }
+  .drow .nav{
+    width: 400px;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+  #typed {
+    font-size: 1.3rem;
+  }
+  .typed-cursor {
+    font-size: 1.3rem;
+  }
+}
+/*-------------------------------  End Media-Queries ------------------------------- */

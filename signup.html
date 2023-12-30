@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------------------------------  Google Font --------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!---------------------------------  icon favicon URL --------------------------------->
+    <link rel="icon" href="images/images.png" />
+    <!---------------------------------  Font Awesome Library ------------------------------- -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--------------------------------- Template CSS File BootStab ---------------------------------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!---------------------------------  Main Template CSS File--------------------------------->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Your Space</title>
+    <!--------------------------------------owl.carousel.js ----------------------------------->
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="signUp">
+          <div class="form">
+            <h1 class="text-center">Let's go!</h1>
+            <div class="userName position-relative">
+              <label for="userName" class="fs-6 fw-medium">User Name</label>
+              <input
+                id="userName"
+                type="text"
+                name="userName"
+                class="form-control"
+                placeholder="Basma"
+                oninput="validationUserName()"
+              />
+              <div class="icon position-absolute">
+                <i class="fa-regular fa-user"></i>
+              </div>
+            </div>
+            <!--Email-->
+            <div class="email position-relative my-3">
+              <label for="email" class="fs-6 fw-medium">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="example@site.com"
+                oninput="validationEmail()"
+                
+              />
+              <div class="icon position-absolute">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </div>
+            <!-- Choose Password -->
+            <div class="pass position-relative">
+              <label for="pass" class="fs-6 fw-medium">Choose Password</label>
+              <input
+                id="pass"
+                type="password"
+                name="pass"
+                class="form-control"
+                placeholder="Minimum 8 characters containing alphabet and digit "
+                oninput="validationPassword()"
+              />
+              <div class="icon position-absolute">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <!-- Toggle password visibility button -->
+              <div class="toggle-password-btn position-absolute">
+                <button
+                  type="button"
+                  id="togglePassword"
+                  onclick="togglePasswordVisibility()"
+                >
+                <i class="fa-solid fa-eye-slash"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="btn d-flex justify-content-center align-items-center mt-3 flex-column"
+            >
+              <div>
+                <button
+                  class="btn btn-light "
+                  id="addUserSignUp"
+                  onclick="addUser()"
+                  type="button"
+                >
+                   Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="text-white fs-6 fw-bold mt-3">
+            <p>
+              You have an account?
+              <span>
+                <a href="index.html" class="text-decoration-none">Signin</a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!------------------------------------ java script ---------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>

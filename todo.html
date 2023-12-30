@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------------------------------  Google Font --------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Blinker:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!---------------------------------  icon favicon URL --------------------------------->
+    <link rel="icon" href="images/images.png" />
+    <!---------------------------------  Font Awesome Library ------------------------------- -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--------------------------------- Template CSS File BootStab ---------------------------------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!---------------------------------  Main Template CSS File--------------------------------->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Your Space</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand text-uppercase" href="todoList.html"
+            >Your Space
+            <i class="fa-solid fa-heart"></i>
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span> <i class="fa-solid fa-bars"></i> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-sm-center">
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-capitalize active"
+                  aria-current="page"
+                  href="./home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-capitalize" href="./todo.html">ToDo</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-capitalize" href="./draw.html">Drawing</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-capitalize">
+                  <button class="Logoutbtn" onclick="logoutUser()">
+                    Logout
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container">
+        <div class="board p-5">
+          <div
+            class="inputs row justify-content-start align-items-start w-75 gy-lg-0 gy-2 py-4"
+          >
+            <div class="col-lg-6 flex-nowrap mx-auto flex-row d-flex">
+              <label
+                class="input-group-text"
+                id="addon-wrapping"
+                for="searchInput"
+                
+                ><i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+              <input
+                type="search"
+                class="form-control"
+                id="searchInput"
+                placeholder="Search"
+                oninput="searchItems()"
+              />
+            </div>
+            <div class="col-lg-4">
+              <input type="text" class="form-control" id="inp" />
+            </div>
+            <div class="col-lg-2">
+              <button id="btn">add</button>
+            </div>
+          </div>
+          <div class="list row w-100 text-center pt-3">
+            <div class="box col-lg-3 col-md-6 col-12">
+              <h2 class="to-do ">TO Do</h2>
+              <div class="items"></div>
+            </div>
+            <div class="box col-lg-3 col-md-6 col-12">
+              <h2 class="Information">Need Information</h2>
+              <div class="items"></div>
+            </div>
+            <div class="box col-lg-3 col-md-6 col-12">
+              <h2 class="Progress">In Progress</h2>
+              <div class="items"></div>
+            </div>
+            <div class="box col-lg-3 col-md-6 col-12">
+              <h2 class="Done">Done</h2>
+              <div class="items"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!------------------------------------ java script ---------------------------------------------->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
