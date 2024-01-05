@@ -91,7 +91,7 @@ This web application combines user authentication and a drawing feature, providi
 
 Experience the Tabs Project in action! Click the link below to access the live demo:
 
-### [Live Demo](https://basmasalim.github.io/YourSpace/)
+### [Live Demo](https://basmasalim.github.io/Your-Space/)
 
 Feel free to interact with the project, browse through different jobs, and explore the user-friendly interface. The live demo provides a hands-on experience to see the Tabs Project in action.
 
