@@ -59,7 +59,7 @@ This web application combines user authentication and a drawing feature, providi
      2. Click the sign-up button.
      3. Displays success or error messages using SweetAlert.
 
- - **TodoList (Drag and Group)**
+ - **TodoList (Drag and Drop)**
     1. **Adding Tasks:**
        - Enter a task in the input field labeled "Add a new task" and press Enter or click the "Add" button.
        - Your new task will be added to the TodoList.
